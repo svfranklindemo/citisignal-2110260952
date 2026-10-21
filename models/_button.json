@@ -1,0 +1,250 @@
+{
+  "definitions": [
+    {
+      "title": "Button",
+      "id": "button",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/button/v1/button",
+            "template": {
+              "model": "button"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "button",
+      "fields": [
+        {
+          "component": "tab",
+          "label": "Basic",
+          "name": "basic"
+        },
+        {
+          "component": "aem-content",
+          "name": "link",
+          "label": "Link"
+        },
+        {
+          "component": "text",
+          "name": "linkText",
+          "label": "Text"
+        },
+        {
+          "component": "text",
+          "name": "linkTitle",
+          "label": "Title"
+        },
+        {
+          "component": "select",
+          "name": "linkType",
+          "label": "Type",
+          "options": [
+            {
+              "name": "default",
+              "value": ""
+            },
+            {
+              "name": "primary",
+              "value": "primary"
+            },
+            {
+              "name": "secondary",
+              "value": "secondary"
+            },
+            { "name": "CTA", "value": "cta" },
+            { "name": "negative", "value": "negative" },
+            { "name": "link", "value": "link" },
+            { "name": "custom", "value": "custom" }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "alignment",
+          "label": "Alignment",
+          "options": [
+            { "name": "Left", "value": "left" },
+            { "name": "Center", "value": "center" },
+            { "name": "Right", "value": "right" }
+          ]
+        },
+        {
+          "component": "boolean",
+          "name": "textUppercase",
+          "label": "Text Uppercase",
+          "value": "true",
+          "valueType": "boolean"
+        },
+        {
+          "component": "text",
+          "name": "eventType",
+          "label": "Event Type",
+          "value": "",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "webhookUrl",
+          "label": "Webhook URL",
+          "value": "",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "formId",
+          "label": "Form ID",
+          "value": "",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "data",
+          "label": "Custom Data",
+          "value": "",
+          "valueType": "string",
+          "description": "Comma-separated key,value pairs"
+        },
+        {
+          "component": "text",
+          "name": "backgroundColor",
+          "label": "Background Color",
+          "value": "",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "backgroundColorOnHover",
+          "label": "Background Color on Hover",
+          "value": "",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "textColor",
+          "label": "Text Color",
+          "value": "",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "textColorOnHover",
+          "label": "Text Color on Hover",
+          "value": "",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "borderColor",
+          "label": "Border Color",
+          "value": "",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "borderColorOnHover",
+          "label": "Border Color on Hover",
+          "value": "",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "borderWidth",
+          "label": "Border Width",
+          "value": "",
+          "valueType": "string"
+        },
+        {
+          "component": "tab",
+          "label": "Mobile Specific",
+          "name": "mobileSpecific"
+        },
+        {
+          "component": "select",
+          "name": "mobilebuttonvariant",
+          "label": "Variant",
+          "options": [
+            {
+              "name": "Primary",
+              "value": "contained"
+            },
+            {
+              "name": "Secondary",
+              "value": "contained-tonal"
+            },
+            {
+              "name": "Outlined",
+              "value": "outlined"
+            },
+            {
+              "name": "Quiet",
+              "value": "text"
+            },
+            {
+              "name": "Elevated",
+              "value": "elevated"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "mobilealignment",
+          "label": "Alignment",
+          "options": [
+            {
+              "name": "Left",
+              "value": "left"
+            },
+            {
+              "name": "Center",
+              "value": "center"
+            },
+            {
+              "name": "Right",
+              "value": "right"
+            },
+            {
+              "name": "Stretch",
+              "value": "stretch"
+            }
+          ]
+        },
+        {
+          "component": "text",
+          "name": "mobilebuttonicon",
+          "label": "Icon",
+          "value": "",
+          "valueType": "string",
+          "description": "Icon name shown on the mobile button, e.g. credit-card"
+        },
+        {
+          "component": "text",
+          "name": "mobilebuttoneventtype",
+          "label": "Mobile Button Event Type",
+          "value": "",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "mobilemessage",
+          "label": "Message",
+          "value": "",
+          "valueType": "string",
+          "description": "Message shown on the mobile app after the button's event runs"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "custommobilestyle",
+          "label": "Custom Mobile Style",
+          "value": "",
+          "multi": true,
+          "description": "Custom styles for the button on mobile"
+        }
+      ]
+    }
+  ]
+}
